@@ -1,66 +1,114 @@
-body {
-    background-color: #FFFFFF;
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
 }
 
-#banner {
-   width: 100% 
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
 
-.principal {
-
-    background-color: #CCCCCC;
-    padding: 30px;
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.titulo-principal {
-    padding-left: 20px;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.titulo-centralizado {
-    text-align: center;
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-p {
-    text-align: center;
+nav a:hover {
+    text-decoration: underline;
+    color:#C78C19;
 }
 
-p em strong {
+.produtos {
+    width: 940px;
+    margin: 0 auto;
 
-    /* The "0" represents no color, while the "F" represents
-    maximum color.*/
-
-    /* The first two letters represent the amount of red, the next two
-    the amount of green, and the last two the amount of blue. */
-
-    color: #FF0000;
+    padding: 50px 0;
 }
 
-#missao {
-    font-size: 20px;
-}
+.produtos li {
 
-.item {
-    font-style: italic;
-}
-
-.beneficios {
-    background-color: #FFFFFF;
-    padding: 20px;
-}
-
-ul {
-
-    /* The inline-block display allows the element to occupy only its defined
-    width and height, which can be customized. */
+    /* The "inline-block" display causes the content to occupy only its size. We
+    can change this size manually if needed. */
 
     display: inline-block;
 
+    text-align: center;
+
+    width: 30%;
+
+    /* By default, the "inline-block" aligns elements along the bottom
+    row. The "vertical-align: top" property causes the elements to be
+    aligned by the top line. */
     vertical-align: top;
-    
-    width: 20%;
-    margin-right: 15%;
+
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    /* border-color: #000000;
+    border-width: 2px;
+    border-style: solid; */
+
+    /* The "border" property contains the "border-color", "border-width" and "border-style" properties. */
+
+    border: 2px solid #000000;
+
+    border-radius: 10px;
 }
 
-.imagem-beneficios {
-    width: 50%;
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active {
+    border-color: #088C19;
+}
+
+/* When we hover over ".produtos li", we want to change the
+style of "h2" element. */
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+footer {
+    text-align: center;
+    background-image: url("./assets/bg.jpg");
+    padding: 40px 0px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
 }
