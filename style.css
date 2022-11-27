@@ -138,3 +138,31 @@ form label, form legend {
 .checkbox {
     margin: 20px 0;
 }
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* The background will take one second to fully update color. */
+
+    transition: 1s background;
+
+    /* The transition will take one second to fully transform the element. */
+
+    transition: 1s transform;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+
+    /* When we hover over the element, its size will increase by 20%. */
+
+    transform: scale(1.2);
+}
